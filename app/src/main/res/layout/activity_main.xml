@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.roll_dice.MainActivity">
+
+    <TextView
+        android:text="Your Score: 0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userTotalScoreText"
+        android:textSize="14sp"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:text="Computer Score: 0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="270dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/computerTotalScoreText" />
+
+    <TextView
+        android:text="Turn Score: 0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/turnScoreText"
+        android:paddingTop="20dp"
+        android:layout_marginLeft="155dp"
+        android:layout_below="@+id/userTotalScoreText"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/dice1"
+        android:layout_marginTop="70dp"
+        android:id="@+id/diceImage"
+        android:layout_below="@+id/computerTotalScoreText"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Roll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/diceImage"
+        android:layout_marginTop="50dp"
+        android:id="@+id/rollButton" />
+
+    <Button
+        android:text="Hold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:id="@+id/holdButton"
+        android:layout_below="@+id/diceImage"
+        android:layout_alignEnd="@+id/diceImage"
+        android:layout_marginEnd="11dp" />
+
+    <Button
+        android:text="Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:id="@+id/resetButton"
+        android:layout_below="@+id/diceImage"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
